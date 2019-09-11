@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:id="@+id/top_layout">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignRight="@+id/top_text"
+            android:layout_marginRight="150dp"
+            android:background="@drawable/home"
+            android:onClick="backGame"/>
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="6."
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/hint"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_toRightOf="@id/top_text"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/hint"
+            android:onClick="hintGame"/>
+        <ImageView
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/home"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/line"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="8dp"
+        android:id="@+id/bottom_layout">
+
+        <ImageView
+            android:id="@+id/bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_line"
+            android:layout_marginTop="8dp"
+            android:text="万万没想到"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_layout"
+        android:layout_above="@id/bottom_layout">
+
+        <ImageView
+            android:id="@+id/sjx"
+            android:layout_width="137dp"
+            android:layout_height="151dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sjx" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="找到x"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/sjx"
+            android:text="6"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_toEndOf="@+id/sjx"
+            android:text="6"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sjx"
+            android:layout_centerHorizontal="true"
+            android:onClick="zdx"
+            android:clickable="true"
+            android:text="x"
+            android:textSize="40dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:onClick="iv_1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/p2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="5">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:text="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:onClick="iv_2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/p1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

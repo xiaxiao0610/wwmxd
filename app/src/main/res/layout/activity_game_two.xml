@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:id="@+id/top_layout">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignRight="@+id/top_text"
+            android:layout_marginRight="150dp"
+            android:background="@drawable/home"
+            android:onClick="backGame"/>
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="2."
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/hint"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_toRightOf="@id/top_text"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/hint"
+            android:onClick="hintGame"/>
+        <ImageView
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/home"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/line"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="8dp"
+        android:id="@+id/bottom_layout">
+
+        <ImageView
+            android:id="@+id/bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_line"
+            android:layout_marginTop="8dp"
+            android:text="万万    想到"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+
+        <Button
+            android:layout_width="18dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:text="没"
+
+            android:textSize="18dp"
+            android:onClick="clickNo"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_layout"
+        android:layout_above="@id/bottom_layout">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#FFFFFF"
+            android:text="点我"
+            android:onClick="clickMe"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhbit.wwmxd">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="万万没想到"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameOne"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameThree"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameFour"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameFive"
+            android:screenOrientation="portrait" />
+        <activity android:name=".GameSix" />
+        <activity android:name=".StartGame" />
+        <activity android:name=".GameSeven" />
+        <activity android:name=".GameEight" />
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".WinmusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".GameNine" />
+        <activity android:name=".GameTen"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="68dp"
+        android:paddingTop="68dp">
+
+        <ImageView
+            android:id="@+id/wang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/mei"
+            android:layout_toEndOf="@+id/mei"
+            android:background="@drawable/w" />
+
+        <ImageView
+            android:id="@+id/wang2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/mei"
+            android:layout_toEndOf="@+id/xiang"
+            android:background="@drawable/w" />
+
+        <ImageView
+            android:id="@+id/mei"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/m" />
+
+        <ImageView
+            android:id="@+id/xiang"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignStart="@+id/mei"
+            android:layout_below="@+id/mei"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/x" />
+
+        <ImageView
+            android:id="@+id/dao"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignStart="@+id/xiang"
+            android:layout_below="@+id/xiang"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/d" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_above="@id/star"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/home"
+            android:onClick="startGame" />
+
+        <TextView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击开始游戏"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_above="@+id/dao"
+            android:layout_alignEnd="@+id/wang2"
+            android:background="@drawable/about"
+            android:onClick="aboutActivity" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

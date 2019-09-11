@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:id="@+id/top_layout">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignRight="@+id/top_text"
+            android:layout_marginRight="150dp"
+            android:background="@drawable/home"
+            android:onClick="backGame"/>
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="5."
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/hint"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_toRightOf="@id/top_text"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/hint"
+            android:onClick="hintGame"/>
+        <ImageView
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/home"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/line"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="8dp"
+        android:id="@+id/bottom_layout">
+
+        <ImageView
+            android:id="@+id/bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_line"
+            android:layout_marginTop="8dp"
+            android:text="万万没想到"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_layout"
+        android:layout_above="@id/bottom_layout">
+
+        <ImageView
+            android:id="@+id/bg_five"
+            android:layout_width="380dp"
+            android:layout_height="230dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bgfive" />
+        <TextView
+            android:id="@+id/tet_five"
+            android:text="请从乱码中找寻通关密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bg_five"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#0F0F0F"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/et_five"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tet_five"
+            android:layout_marginTop="23dp"
+            android:maxLines="1"
+            android:hint="你猜~"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:background="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_five"
+            android:layout_marginTop="10dp"
+            android:onClick="clickMe"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
